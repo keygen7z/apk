@@ -1,198 +1,34 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Descarga de APKs</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-        body {
-            font-family: Arial, sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            min-height: 100vh;
-            padding: 20px;
-        }
-        
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-        }
-        
-        header {
-            text-align: center;
-            color: white;
-            margin-bottom: 30px;
-            padding: 20px;
-        }
-        
-        header h1 {
-            font-size: 2.5em;
-            margin-bottom: 10px;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
-        }
-        
-        header p {
-            font-size: 1.1em;
-            opacity: 0.9;
-        }
-        
-        .apk-list {
-            background: white;
-            border-radius: 15px;
-            padding: 25px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
-        }
-        
-        .apk-item {
-            background: #f8f9fa;
-            border: 2px solid #e9ecef;
-            border-radius: 10px;
-            padding: 20px;
-            margin-bottom: 15px;
-            transition: all 0.3s ease;
-        }
-        
-        .apk-item:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-            border-color: #667eea;
-        }
-        
-        .apk-item h3 {
-            color: #333;
-            margin-bottom: 8px;
-            font-size: 1.4em;
-        }
-        
-        .apk-info {
-            color: #666;
-            font-size: 0.9em;
-            margin-bottom: 12px;
-        }
-        
-        .apk-info span {
-            display: inline-block;
-            margin-right: 15px;
-        }
-        
-        .download-btn {
-            display: inline-block;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            padding: 12px 30px;
-            text-decoration: none;
-            border-radius: 25px;
-            font-weight: bold;
-            transition: all 0.3s ease;
-            box-shadow: 0 4px 10px rgba(102, 126, 234, 0.4);
-        }
-        
-        .download-btn:hover {
-            transform: scale(1.05);
-            box-shadow: 0 6px 15px rgba(102, 126, 234, 0.6);
-        }
-        
-        .download-btn:active {
-            transform: scale(0.98);
-        }
-        
-        .icon {
-            display: inline-block;
-            width: 50px;
-            height: 50px;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            border-radius: 10px;
-            margin-right: 15px;
-            vertical-align: middle;
-            text-align: center;
-            line-height: 50px;
-            color: white;
-            font-size: 1.5em;
-            font-weight: bold;
-        }
-        
-        .empty-state {
-            text-align: center;
-            padding: 40px;
-            color: #999;
-        }
-        
-        .empty-state p {
-            font-size: 1.1em;
-            margin-top: 10px;
-        }
-        
-        footer {
-            text-align: center;
-            color: white;
-            margin-top: 30px;
-            opacity: 0.8;
-            font-size: 0.9em;
-        }
-        
-        @media (max-width: 600px) {
-            header h1 {
-                font-size: 2em;
-            }
-            
-            .apk-item {
-                padding: 15px;
-            }
-            
-            .icon {
-                width: 40px;
-                height: 40px;
-                line-height: 40px;
-                font-size: 1.2em;
-            }
-        }
-    </style>
 </head>
+
 <body>
-    <div class="container">
-        <header>
-            <h1>Mis Aplicaciones</h1>
-            <p>Descarga directa de APKs</p>
-        </header>
-        
-        <div class="apk-list">
-            <!-- Ejemplo de APK - Duplica este bloque para cada aplicación -->
-            <div class="apk-item">
-                <span class="icon">A</span>
-                <div style="display: inline-block; vertical-align: middle; width: calc(100% - 70px);">
-                    <h3>Nombre de la App</h3>
-                    <div class="apk-info">
-                        <span>📦 Versión: 1.0.0</span>
-                        <span>💾 Tamaño: 5.2 MB</span>
-                    </div>
-                    <a href="apks/tu-app.apk" class="download-btn" download>⬇️ Descargar APK</a>
-                </div>
-            </div>
-            
-            <!-- Añade más aplicaciones aquí siguiendo el mismo formato -->
-            <div class="apk-item">
-                <span class="icon">B</span>
-                <div style="display: inline-block; vertical-align: middle; width: calc(100% - 70px);">
-                    <h3>Otra App de Ejemplo</h3>
-                    <div class="apk-info">
-                        <span>📦 Versión: 2.1.0</span>
-                        <span>💾 Tamaño: 8.5 MB</span>
-                    </div>
-                    <a href="apks/otra-app.apk" class="download-btn" download>⬇️ Descargar APK</a>
-                </div>
-            </div>
-
-
-        </div>
-        
-        <footer>
-            <p>Recuerda habilitar "Orígenes desconocidos" en la configuración de tu dispositivo.</p>
-        </footer>
-    </div>
+    <h1>Mis Aplicaciones</h1>
+    <p>Descarga directa de APKs</p>
+    
+    <hr>
+    
+    <h2>Nombre de la App</h2>
+    <p>Version: 1.0.0</p>
+    <p>Tamaño: 5.2 MB</p>
+    <p><a href="apks/tu-app.apk">Descargar APK</a></p>
+    
+    <hr>
+    
+    <h2>Otra App de Ejemplo</h2>
+    <p>Version: 2.1.0</p>
+    <p>Tamaño: 8.5 MB</p>
+    <p><a href="apks/otra-app.apk">Descargar APK</a></p>
+    
+    <hr>
+    
+    <p><small>Recuerda habilitar "Origenes desconocidos" en la configuracion de tu dispositivo</small></p>
+    
 </body>
+
 </html>
